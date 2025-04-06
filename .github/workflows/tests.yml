@@ -1,10 +1,10 @@
-name: Bet Management UI E2E Tests
+name: ENEI E2E Tests
 on:
   pull_request:
     branches: [main, master]
 
 jobs:
-  test:
+  action-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -14,6 +14,8 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm ci
+      - name: Run unit tests
+        run: npm run test
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests

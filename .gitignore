@@ -28,3 +28,7 @@ dist-ssr
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage-ts

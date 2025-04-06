@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ToDoList Component > Snapshot of List of events 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Listagem de Apresentações
+    </h1>
+    <ul>
+      <li
+        class="event__list"
+      >
+        <img
+          alt="Hugo Queirós"
+          class="event__image"
+          src="/assets/reactPresentation.jpeg"
+        />
+        <div
+          class="event__details"
+        >
+          <div>
+            <h2>
+              React Basics & The Importance of Testing
+            </h2>
+          </div>
+          <div>
+            <h3>
+              Hugo Queirós
+            </h3>
+          </div>
+          <div>
+            <h4>
+              Horário: 9:30 às 11:30
+            </h4>
+          </div>
+          <button
+            class="event__button"
+          >
+            Marcar evento como assistido
+          </button>
+        </div>
+      </li>
+      <li
+        class="event__list"
+      >
+        <img
+          alt="Mafalda Landeiro"
+          class="event__image"
+          src="/assets/kotlinPresentation.jpeg"
+        />
+        <div
+          class="event__details"
+        >
+          <div>
+            <h2>
+              Kotlin KickStart: Mastering the Basics for Modern Development
+            </h2>
+          </div>
+          <div>
+            <h3>
+              Mafalda Landeiro
+            </h3>
+          </div>
+          <div>
+            <h4>
+              Horário: 9:30 às 11:30
+            </h4>
+          </div>
+          <button
+            class="event__button"
+          >
+            Marcar evento como assistido
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
