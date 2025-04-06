@@ -1,0 +1,29 @@
+.event {
+    &__list {
+        display: flex;
+        padding: 8px;
+        border-bottom: 2px solid #ccc;
+        align-items: center;
+    }
+    &__details {
+        width: 60%;
+    }
+    &__image {
+        width: 15%;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+    &__button {
+        margin-top: 10px;
+        background-color: #005cad;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    &__attended{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
