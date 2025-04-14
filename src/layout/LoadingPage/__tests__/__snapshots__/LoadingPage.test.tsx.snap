@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading Layout > Snapshot of Loadinf 1`] = `
+<DocumentFragment>
+  <div
+    class="loading"
+  >
+    <div
+      aria-label="Loading..."
+      class="spinner-border"
+    />
+    <div>
+      Loading...
+    </div>
+  </div>
+</DocumentFragment>
+`;

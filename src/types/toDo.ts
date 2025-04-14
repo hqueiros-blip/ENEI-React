@@ -1,7 +1,3 @@
-export type ToDos = {
-  eventEnei: ToDo;
-};
-
 export type ToDo = {
   id: number;
   image: string;

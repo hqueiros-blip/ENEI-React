@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ToDoItem component > Renders the details events 1`] = `
+<DocumentFragment>
+  <li
+    class="event__list"
+  >
+    <img
+      alt="Hugo Queirós"
+      class="event__image"
+      src="/assets/reactPresentation.jpeg"
+    />
+    <div
+      class="event__details"
+    >
+      <div>
+        <h2>
+          React Basics & The Importance of Testing
+        </h2>
+      </div>
+      <div>
+        <h3>
+          Hugo Queirós
+        </h3>
+      </div>
+      <div>
+        <h4>
+          Horário: 9:30 às 11:30
+        </h4>
+      </div>
+      <button
+        class="event__button"
+      >
+        Marcar evento como assistido
+      </button>
+    </div>
+  </li>
+</DocumentFragment>
+`;
