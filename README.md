@@ -29,7 +29,7 @@ Follow these steps to get the app up and running on your local machine:
 #### 1. Clone the Repository
 
 ```bash
-
+git clone https://github.com/hqueiros-blip/ENEI-React.git
 ```
 
 #### 2. Install dependencies
