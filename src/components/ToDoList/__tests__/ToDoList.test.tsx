@@ -1,17 +1,28 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import {
+  render,
+  screen,
+  waitFor,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { events } from "utils/mockedData";
 import { ToDoList } from "../ToDoList";
 
 describe("ToDoList Component", () => {
-  it("Snapshot of List of events", () => {
+  it("Snapshot of List of events", async () => {
     const { asFragment } = render(<ToDoList />);
 
+    await waitForElementToBeRemoved(screen.getByText(/Loading/i), {
+      timeout: 3000,
+    });
     expect(asFragment()).toMatchSnapshot();
   });
-  it("Render List of events", () => {
+  it("Render List of events", async () => {
     render(<ToDoList />);
 
+    await waitForElementToBeRemoved(screen.getByText(/Loading/i), {
+      timeout: 3000,
+    });
     // Usando os mocks verificar se todos os eventos estão visíveis
     events.forEach((event) => {
       expect(screen.getByText(event.description)).toBeInTheDocument();
@@ -21,6 +32,10 @@ describe("ToDoList Component", () => {
   it("Mark a event as attended", async () => {
     const user = userEvent.setup();
     render(<ToDoList />);
+
+    await waitForElementToBeRemoved(screen.getByText(/Loading/i), {
+      timeout: 3000,
+    });
 
     // Verificar se existe o botão para marcar o evento como assistido
     const button = screen.getAllByRole("button", {

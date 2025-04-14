@@ -1,0 +1,10 @@
+.loading {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  .spinner-border {
+    margin-bottom: 0.5rem;
+  }
+}

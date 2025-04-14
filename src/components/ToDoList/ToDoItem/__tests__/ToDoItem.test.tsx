@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ToDoItem } from "../ToDoItem";
 import { events } from "utils/mockedData";
+import userEvent from "@testing-library/user-event";
 
 const onAttendMock = vi.fn();
 
@@ -32,11 +33,12 @@ describe("ToDoItem component", () => {
     expect(button).toBeInTheDocument();
   });
 
-  it("Call onAttend function with the correct Id", () => {
+  it("Call onAttend function with the correct Id", async () => {
+    const user = userEvent.setup();
     render(<ToDoItem eventEnei={events[0]} onAttend={onAttendMock} />);
 
     const button = screen.getByRole("button");
-    fireEvent.click(button);
+    await user.click(button);
 
     expect(onAttendMock).toHaveBeenCalledWith(events[0].id);
   });
